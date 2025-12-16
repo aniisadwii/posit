@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/*.php": { "runtime": "vercel-php@0.6.0" },
+        "public/index.php": { "runtime": "vercel-php@0.6.0" }
+    },
+    "routes": [
+        {
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
+        },
+        {
+            "src": "/(css|js|images)/(.*)",
+            "dest": "/public/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/public/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://pos-it.vercel.app",
+        "APP_KEY": "base64:COPY_DARI_ENV_LOCAL_KAMU"
+    }
+}
