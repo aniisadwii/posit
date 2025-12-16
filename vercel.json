@@ -22,7 +22,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://pos-it.vercel.app",
+        "APP_URL": "https://posit.vercel.app",
         "APP_KEY": "base64:COPY_DARI_ENV_LOCAL_KAMU"
     }
 }
